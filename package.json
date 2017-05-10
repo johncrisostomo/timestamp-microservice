@@ -4,6 +4,7 @@
   "description": "A timestamp microservice for FCC's backend track",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

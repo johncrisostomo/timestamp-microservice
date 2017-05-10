@@ -3,6 +3,12 @@ var moment = require('moment');
 
 var app = express();
 
+app.get('/', (req, res) => {
+  const date = Date.now();
+  res.set('Content-Type', 'text/plain');
+  res.end(`This is a timestamp microservice. Try it by passing a date to the URL like so: https://johncrisostomo-timestamp.herokuapp.com/${date}`);
+});
+
 app.get('/:input', (req, res) => {
   res.set('Content-Type', 'application/json');
 
