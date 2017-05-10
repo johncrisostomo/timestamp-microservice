@@ -1,0 +1,26 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "A timestamp microservice for FCC's backend track",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/johncrisostomo/timestamp-microservice.git"
+  },
+  "keywords": [
+    "timestamp",
+    "microservice",
+    "fcc",
+    "api",
+    "express"
+  ],
+  "author": "John Crisostomo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johncrisostomo/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/johncrisostomo/timestamp-microservice#readme"
+}
