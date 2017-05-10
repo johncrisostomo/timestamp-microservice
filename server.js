@@ -4,6 +4,8 @@ var moment = require('moment');
 var app = express();
 
 app.get('/:input', (req, res) => {
+  res.set('Content-Type', 'application/json');
+
   const input = req.params.input;
   let result = {
     unix: null,
