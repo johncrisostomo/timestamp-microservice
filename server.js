@@ -19,13 +19,13 @@ app.get('/:input', (req, res) => {
   };
 
   if (input.match(/^[0-9]+/g)) {
-    let date = moment.unix(Number(input));
+    let date = moment(new Date(Number(input)));
     if (date.isValid()) {
       result.unix = date.toDate().getTime();;
       result.natural = date.format('MMMM DD, YYYY');
     } 
   } else {
-    let date = moment(input);
+    let date = moment(new Date(input));
 
     if (date.isValid()) {
       result.unix = date.toDate().getTime();
